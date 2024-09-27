@@ -5,6 +5,7 @@ import AddStudy from './components/AddStudy';
 import UpdateStudy from './components/UpdateStudy';
 import studyContext from './context/StudyContext';
 import { useState } from 'react';
+import View from './components/View';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
             <Route path='/' element={<Home/>} />
             <Route path='/addStudy' element={<AddStudy/>} />
             <Route path='/updateStudy' element={<UpdateStudy/>} />
+            <Route path='/view' element={<View/>}/>
           </Routes>
         </studyContext.Provider>
       </BrowserRouter>

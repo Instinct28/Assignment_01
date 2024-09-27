@@ -26,8 +26,13 @@ const AddStudy = () => {
         }
     }
 
+    const handleClick = () => {
+        navigate('/');
+    }
+
   return (
-    <div className='container my-5'>
+    <div className='con container my-5'>
+        <i className="fa-solid fa-xmark" onClick={handleClick}></i>
         <form onSubmit={handleSubmit}>
             <div className="mb-3">
                 <label htmlFor="name" className="form-label">Study Name</label>

@@ -20,8 +20,13 @@ const Home = () => {
     }
 
     const updateStudy = (element) => {
-        object.updateFun({element});
-        navigate('/updateStudy');
+      object.updateFun({element});
+      navigate('/updateStudy');
+    }
+
+    const viewStudy = (element) => {
+      object.updateFun({element});
+      navigate('/view');
     }
 
     const deleteStudy = async () => {
@@ -72,7 +77,7 @@ const Home = () => {
                             <td>{element.phase}</td>
                             <td>{element.sponsorName}</td>
                             <td>{element.description}</td>
-                            <td><button>View</button></td>
+                            <td><button onClick={()=>viewStudy(element)}>View</button></td>
                             <td><button onClick={()=>updateStudy(element)}>Edit</button></td>
                         </tr>)
                     })
