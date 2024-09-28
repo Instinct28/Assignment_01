@@ -6,7 +6,7 @@ const View = () => {
 
     const navigate = useNavigate();
     const object = useContext(studyContext);
-    const [formData, setformData] = useState(object.data.element);
+    const formData = object.data.element;
 
     const handleClick = () => {
         navigate('/');

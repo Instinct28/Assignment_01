@@ -41,7 +41,13 @@ const UpdateStudy = () => {
             </div>
             <div className="mb-3">
                 <label htmlFor="phase" className="form-label">Study Phase</label>
-                <input type="text" className="form-control" onChange={onChange} value={formData.phase} name='phase'/>
+                <select className="form-control select-field" name="phase" onChange={onChange} value={formData.phase}>
+                    <option value="" disabled>Select Phase</option>
+                    <option value="Phase I">Phase I</option>
+                    <option value="Phase II">Phase II</option>
+                    <option value="Phase III">Phase III</option>
+                    <option value="Phase IV">Phase IV</option>
+                </select>
             </div>
             <div className="mb-3">
                 <label htmlFor="sponsorName" className="form-label">Sponsor Name</label>

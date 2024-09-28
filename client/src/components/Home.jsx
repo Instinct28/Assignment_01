@@ -54,7 +54,7 @@ const Home = () => {
 
   return (
     <div>
-      <h1 className='text-center'>Study Management</h1>
+      <h1 className='text-center my-4'>Study Management</h1>
       <div className='container'>
         <table className='table table-bordered'>
             <thead>
@@ -72,7 +72,7 @@ const Home = () => {
                 {
                     tableData.map((element)=>{
                         return(<tr key={element._id}>
-                            <td><input type='checkBox' onChange={(event) => onChange(event, element._id)}/></td>
+                            <td className='text-center'><input type='checkBox' onChange={(event) => onChange(event, element._id)}/></td>
                             <td>{element.name}</td>
                             <td>{element.phase}</td>
                             <td>{element.sponsorName}</td>

@@ -5,3 +5,12 @@
     float : right;
     cursor: pointer;
 }
+.select-field {
+    background-image: 
+      url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="%23333" d="M2 0L0 2h4z"/></svg>'), /* Up arrow */
+      url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="%23333" d="M2 5L0 3h4z"/></svg>'); /* Down arrow */
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 1.25rem top 0.5rem, right 1.25rem bottom 0.5rem;
+    background-size: 10px 10px, 10px 10px;
+}
+  
